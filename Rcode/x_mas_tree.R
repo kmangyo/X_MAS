@@ -33,7 +33,7 @@ df$TF<-with(df,ifelse(z>z1|z>z2,1,0))
 
 df<-subset(df,df$TF==0)
 
-#z의 가장 큰값, x,y의 중앙값 근처에 별(?)을 위치시킵니다. (삼각뿔의 제일 꼭대기 ) 색과 크기도 다르게 설정합니다.
+#z의 가장 큰값, x,y의 중앙값 근처에 별(?)을 위치시킵니다. (삼각뿔의 제일 꼭대기) 색과 크기도 다르게 설정합니다.
 star<-c(z=max(df$z)-.005,x=median(df$x)-.005,y=median(df$y)-.005,color=1.5,size=5,z1=NA,z2=NA,TF=NA)
 df<-rbind(df,star)
 
