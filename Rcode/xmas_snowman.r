@@ -62,13 +62,14 @@ smile_face <- rbind(face, smile)
 plot_ly(smile_face, x = ~x, y = ~y, z = ~z, 
         marker=list(size= ~smile_face$size, opacity=.9, color=smile_face$colors, symbol=smile_face$symbol)) %>% layout(paper_bgcolor='rgb(193, 222, 255)')  %>% layout(title = 'Snow Man')
 
-# snow man w/ smile
+# snow man !!
 snowman <-rbind(sphere, face, smile)
 
 p <- plot_ly(snowman, x = ~x, y = ~y, z = ~z, 
              marker=list(size= ~snowman$size, opacity=.9, color=snowman$colors, symbol=snowman$symbol)) %>% layout(paper_bgcolor='rgb(193, 222, 255)')  %>% layout(title = 'Snow Man')
 p
 
+# merry christmas!
 Sys.setenv("plotly_username"="XXXX")
 Sys.setenv("plotly_api_key"="XXXX")
 
